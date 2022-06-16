@@ -195,6 +195,7 @@ h6 {
   color: #00B5B5;
   text-align: center;
   margin-bottom: 50px;
+  text-shadow: 1px 1px 0px #2a5275, 2px 2px 0px #2a5275, 3px 3px 0px #2a5275;
 }
 
 * {
@@ -242,7 +243,7 @@ body {
   font-weight: 900;
   font-size: 30px;
   color: #00B5B5;
-  text-shadow: 3px 0px 0px #fff;
+  text-shadow: 2px 2px 0px #2a5275, 3px 3px 0px rgb(255, 255, 255);
   letter-spacing: 3px;
 }
 
@@ -449,6 +450,7 @@ body {
 
 .main__title span {
   color: #00B5B5;
+  text-shadow: 2px 2px 0px #2a5275, 3px 3px 0px rgb(255, 255, 255);
 }
 
 .main__subtitle {
