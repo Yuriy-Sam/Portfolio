@@ -1563,11 +1563,15 @@ input[id=radio-3]:checked ~ .glider {
   }
 
   .about__languages {
-    max-width: 350px;
+    max-width: 100%;
   }
 
   .about__languages_name {
     font-size: 15px;
+  }
+
+  .about__languages_bar {
+    width: 190px;
   }
 
   .about__skills_content {
