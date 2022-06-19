@@ -242,12 +242,9 @@ body {
           align-items: center;
 }
 
-.header__logo {
-  font-weight: 900;
-  font-size: 30px;
-  color: #00B5B5;
-  text-shadow: 1px 1px 0px #2a5275, 2px 2px 0px #2a5275, 3px 3px 0px #2a5275;
-  letter-spacing: 3px;
+.header__logo img {
+  width: 40px;
+  height: auto;
 }
 
 .header__menu {
