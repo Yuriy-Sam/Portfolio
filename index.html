@@ -3,8 +3,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220617173244">
     <title>Portfolio</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Мое портфолио">
+    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Мое портфолио">
+    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220619155549">
+    
 </head>
 <body>
     <header class="header">
@@ -217,6 +234,36 @@
     <img class="portfolio__wave" src="img/bg-wave.svg" alt="">
 
     <div class="container">
+        <div class="title light">My Works</div>
+        <div class="tabs_content">
+            <div class="tabs">
+                <input type="radio" id="radio-1" name="tabs" checked />
+                <label class="tab" for="radio-1">Upcoming<span class="notification">2</span></label>
+                <input type="radio" id="radio-2" name="tabs" />
+                <label class="tab" for="radio-2">Development</label>
+                <input type="radio" id="radio-3" name="tabs" />
+                <label class="tab" for="radio-3">Completed</label>
+                <span class="glider"></span>
+            </div>
+        </div>
+        <div class="portfolio__works_list">
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+
+
+
+        </div>
+
 
     </div>
     <img class="portfolio__wave rotate" src="img/bg-wave.svg" alt="">
@@ -225,7 +272,7 @@
 
     </main>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20220617173244"></script>
-    <script src="js/app.min.js?_v=20220617173244"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20220619155549"></script>
+    <script src="js/app.min.js?_v=20220619155549"></script>
 </body>
 </html>
