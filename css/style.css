@@ -1185,7 +1185,7 @@ input[id=radio-3]:checked ~ .tab {
 }
 
 .contact__descr {
-  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .contact__form {
@@ -1337,8 +1337,177 @@ input[id=radio-3]:checked ~ .tab {
   margin-right: 5px;
 }
 
-.contact__img img {
+.contact__bg {
+  margin: 0 auto;
+  position: relative;
+  height: 600px;
+  width: 400px;
+  z-index: 4;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.contact__bg_img {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
   max-height: 600px;
+  width: auto;
+}
+
+.contact__bg__internet {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 10%;
+  top: 30%;
+  max-height: 600px;
+}
+
+.contact__bg__internet svg {
+  position: absolute;
+}
+
+.contact__bg__internet .internet {
+  -webkit-animation: 6s linear 1s infinite internet;
+          animation: 6s linear 1s infinite internet;
+}
+
+.contact__bg__message {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: -20%;
+  top: 10%;
+  max-height: 600px;
+}
+
+.contact__bg__message svg {
+  width: 200px;
+}
+
+.contact__bg__message__typing {
+  position: absolute;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--main_color);
+  -webkit-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.contact__bg__mail {
+  position: absolute;
+  left: 0%;
+  bottom: 30%;
+  max-height: 600px;
+  width: auto;
+  -webkit-animation: 3s linear 1s infinite alternate mail;
+          animation: 3s linear 1s infinite alternate mail;
+}
+
+.contact__bg__plane {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  max-height: 600px;
+  width: auto;
+  -webkit-animation: plane 4s ease infinite;
+          animation: plane 4s ease infinite;
+}
+
+@-webkit-keyframes plane {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  100% {
+    -webkit-transform: translate(200px, -90px);
+            transform: translate(200px, -90px);
+  }
+}
+
+@keyframes plane {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  100% {
+    -webkit-transform: translate(200px, -90px);
+            transform: translate(200px, -90px);
+  }
+}
+
+@-webkit-keyframes mail {
+  0% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes mail {
+  0% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes internet {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes internet {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .hamburger {
@@ -1444,13 +1613,13 @@ input[id=radio-3]:checked ~ .tab {
 
   .contact__wrapper {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .contact__descr {
-    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .contact__img img {
@@ -1783,5 +1952,78 @@ input[id=radio-3]:checked ~ .tab {
 
   .contact__form {
     width: 100%;
+  }
+
+  .contact__bg {
+    margin: 0 auto;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    z-index: 4;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+
+  .contact__bg_img {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 0;
+    max-height: 300px;
+    width: auto;
+  }
+
+  .contact__bg__internet {
+    left: 15%;
+  }
+
+  .contact__bg__internet .internet {
+    -webkit-animation: 6s linear 1s infinite internet;
+            animation: 6s linear 1s infinite internet;
+    width: 90px;
+  }
+
+  .contact__bg__internet .internet_back {
+    width: 50px;
+  }
+
+  .contact__bg__message {
+    right: 0%;
+    top: 0;
+  }
+
+  .contact__bg__message svg {
+    width: 90px;
+  }
+
+  .contact__bg__message__typing {
+    font-weight: 500;
+    font-size: 11px;
+  }
+
+  .contact__bg__mail {
+    position: absolute;
+    left: 0%;
+    bottom: 10%;
+    max-height: 600px;
+    width: auto;
+    -webkit-animation: 3s linear 1s infinite alternate mail;
+            animation: 3s linear 1s infinite alternate mail;
+  }
+
+  .contact__bg__mail svg {
+    width: 80px;
+  }
+
+  .contact__bg__plane {
+    left: 5%;
+    bottom: -20%;
+  }
+
+  .contact__bg__plane svg {
+    width: 70px;
   }
 }
