@@ -95,6 +95,7 @@ h6 {
 :root {
   --main_color: #00B5B5;
   --second_color: #2a5275;
+  --error_color: #a74134;
   --bg_color: #f3f4f5;
 }
 
@@ -250,6 +251,7 @@ body {
 }
 
 .header__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,6 +430,45 @@ body {
 .header__social_btn_active {
   border-radius: 100% 100% 0% 0%;
   background-color: var(--main_color);
+}
+
+.menu ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.menu ul li a {
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.menu ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+.menu ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
 }
 
 .main {
@@ -1153,34 +1194,124 @@ input[id=radio-3]:checked ~ .tab {
 }
 
 .contact__input {
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  position: relative;
   width: 100%;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
-.contact__input input {
+.contact__input__label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.5;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact__input__img {
+  height: 25px;
+}
+
+.contact__input__img:last-child {
+  margin-left: 10px;
+}
+
+.contact__input__input {
+  padding: 10px;
   width: 100%;
+  height: 50px;
   font-size: 18px;
   font-weight: 500;
   background-color: transparent;
-  border-bottom: 3px solid var(--main_color);
+  border: 4px solid var(--main_color);
+  border-radius: 5px;
+}
+
+.contact__input__input input {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .contact__textarea {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .contact__textarea textarea {
-  min-width: 100%;
+  width: 100%;
   resize: none;
-  height: 250px;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 10px;
+  height: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 4px solid var(--main_color);
   padding: 10px;
   opacity: 0.7;
+}
+
+.contact__textarea label {
+  top: 10px;
+  left: 0;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact__input :focus ~ .contact__input__label,
+.contact__input :valid ~ .contact__input__label,
+.contact__textarea :focus ~ .contact__input__label,
+.contact__textarea :valid ~ .contact__input__label {
+  color: var(--main_color);
+  display: inline;
+  padding: 0 10px;
+  top: 0;
+  background-color: var(--bg_color);
+  opacity: 1;
+  -webkit-transform: translate(10px, -7px);
+      -ms-transform: translate(10px, -7px);
+          transform: translate(10px, -7px);
+  width: auto;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-right: 3px solid var(--main_color);
+  border-left: 3px solid var(--main_color);
+}
+
+.contact__input :focus ~ .contact__input__label img,
+.contact__input :valid ~ .contact__input__label img,
+.contact__textarea :focus ~ .contact__input__label img,
+.contact__textarea :valid ~ .contact__input__label img {
+  display: none;
+}
+
+.contact__input :focus,
+.contact__textarea :focus {
+  -webkit-box-shadow: 0 0 10px var(--main_color);
+          box-shadow: 0 0 10px var(--main_color);
 }
 
 .contact__privacy {

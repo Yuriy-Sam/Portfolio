@@ -37,7 +37,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20220624093625">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220624195858">
     
     
 </head>
@@ -360,18 +360,32 @@
             <div class="contact__descr">
                 <div class="title">Contact me</div>
 
-                <form action="#" class="contact__form">
+                <form action="#" class="contact__form" method="post">
                     <div class="contact__input">
-                        <!-- <label for="name">Name</label> -->
-                        <input required placeholder="Name" name="name" id="name" type="text">
+                        <input class="contact__input__input" required name="name" id="name" type="text">
+                        <label class="contact__input__label" for="name">
+                            <div class="contact__input__name">Name</div>
+                            <img class="contact__input__img" src="img/icons/user.svg" alt="user">
+                        </label>
+
                     </div>
                     <div class="contact__input">
-                        <!-- <label for="email">E-mail</label> -->
-                        <input required placeholder="E-mail" name="email" id="email" type="email">
+                        <input class="contact__input__input" required name="email" id="email" type="email">
+                        <label class="contact__input__label" for="email">
+                            <div class="contact__input__name">E-mail</div>
+                            <img class="contact__input__img" src="img/icons/mail.svg" alt="mail">
+
+                        </label>
+
+
                     </div>
                     <div class="contact__textarea">
-                        <!-- <label for="text">Message</label> -->
-                        <textarea required placeholder="Text &#9998;" name="text" id="text"></textarea>
+                        <textarea class="contact__input__input" required name="message" id="message"></textarea>
+                        <label class="contact__input__label" for="message">
+                            <div class="contact__input__name">Text</div>
+                            <img class="contact__input__img" src="img/icons/write.svg" alt="write">
+                        </label>
+
                     </div>
                     <div class="contact__privacy">
                         <input required type="checkbox">
@@ -408,7 +422,7 @@
 
     </main>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20220624093625"></script>
-    <script src="js/app.min.js?_v=20220624093625"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20220624195858"></script>
+    <script src="js/app.min.js?_v=20220624195858"></script>
 </body>
 </html>
