@@ -37,7 +37,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20220619184843">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220624093625">
     
     
 </head>
@@ -48,9 +48,10 @@
             <div class="header__logo"><img src="img/icons/logoo41.svg" alt="logo"></div>
             <ul class="header__menu">
                 <li class="header__menu_item"><a href="#main">Home</a></li>
+                <li class="header__menu_item"><a href="#works">My works</a></li>
                 <li class="header__menu_item"><a href="#about">About</a></li>
-                <li class="header__menu_item"><a href="#">My works</a></li>
-                <li class="header__menu_item"><a href="#">Contact</a></li>
+
+                <li class="header__menu_item"><a href="#contact">Contact</a></li>
 
             </ul>
             <audio muted autoplay loop> 
@@ -63,7 +64,9 @@
             </iframe>  -->
             <div class="header__end">
                 <button class="header__volume header__volume_active">
-                    <img src="img/icons/volume-high.svg" alt="Volume">
+                    <svg width="512px" height="512px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <title>ionicons-v5-g</title><path d="M320,320c9.74-19.38,16-40.84,16-64,0-23.48-6-44.42-16-64" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/><path d="M368,368c19.48-33.92,32-64.06,32-112s-12-77.74-32-112" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/><path d="M416,416c30-46,48-91.43,48-160S446,143,416,96" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/><polygon points="125.65 176.1 32 176.1 32 335.9 125.65 335.9 256 440 256 72 125.65 176.1"/>
+                    </svg>
 
                     <span></span>
                     <span></span>
@@ -71,19 +74,58 @@
 
                 <div class="header__social">
                     <button class="header__social_btn ">
-                        <img src="img/icons/user.svg" alt="user">
+                        <svg class="user-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 472.615 472.615" style="enable-background:new 0 0 472.615 472.615;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <circle  cx="236.308" cy="117.504" r="111.537"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M369,246.306c-1.759-1.195-5.297-3.493-5.297-3.493c-28.511,39.583-74.993,65.402-127.395,65.402
+                                    c-52.407,0-98.894-25.825-127.404-65.416c0,0-2.974,1.947-4.451,2.942C41.444,288.182,0,360.187,0,441.87v24.779h472.615V441.87
+                                    C472.615,360.549,431.538,288.822,369,246.306z"/>
+                            </g>
+                        </g>
+                        </svg>
+
                     </button>
                     <ul class="header__social_list ">
                         <li>
                             <a href="#" class="header__social_item">
-                                <img src="img/icons/github.svg" alt="github">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#fff" d="M49.998,11.963C28.461,11.963,11,29.425,11,50.965
+                                        c0,17.231,11.172,31.849,26.671,37.003c1.952,0.361,2.662-0.84,2.662-1.877c0-0.924-0.034-3.375-0.051-6.633
+                                        c-10.849,2.359-13.138-5.229-13.138-5.229c-1.774-4.505-4.331-5.703-4.331-5.703c-3.541-2.418,0.269-2.371,0.269-2.371
+                                        c3.914,0.277,5.974,4.018,5.974,4.018c3.478,5.96,9.129,4.235,11.35,3.243c0.353-2.525,1.363-4.24,2.476-5.217
+                                        c-8.659-0.984-17.763-4.33-17.763-19.274c0-4.259,1.519-7.741,4.013-10.468c-0.399-0.982-1.74-4.947,0.383-10.319
+                                        c0,0,3.274-1.048,10.726,4.001c3.109-0.869,6.446-1.303,9.763-1.316c3.312,0.014,6.65,0.447,9.763,1.316
+                                        c7.447-5.049,10.716-4.001,10.716-4.001c2.128,5.372,0.788,9.337,0.388,10.319c2.5,2.727,4.008,6.209,4.008,10.468
+                                        c0,14.979-9.117,18.279-17.805,19.241c1.398,1.205,2.646,3.59,2.646,7.229c0,5.211-0.047,9.416-0.047,10.695
+                                        c0,1.045,0.701,2.26,2.681,1.873C77.836,82.798,89,68.191,89,50.965C89,29.425,71.539,11.963,49.998,11.963z"/>
+                                </g>
+                                </svg>
+
                                 <p>github</p>
                             </a>
                             
                         </li>
                         <li>
                             <a href="#" class="header__social_item">
-                                <img src="img/icons/facebook.svg" alt="facebook">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve" fill="#fff">
+                                <g id="XMLID_834_">
+                                    <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+                                        c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+                                        V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+                                        C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+                                        c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+                                </g>
+                                </svg>
+
                                 <p>facebook</p>
                             </a>
                             
@@ -91,7 +133,13 @@
                         </li>
                         <li>
                             <a href="#" class="header__social_item">
-                                <img src="img/icons/instagram.svg" alt="instagram">
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path fill-rule="nonzero" d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/>
+                                    </g>
+                                </svg>
+                                
                                 <p>instagram</p>
                             </a>    
                             
@@ -139,13 +187,68 @@
     <img class="main__wave" src="img/bg-wave.svg" alt="">
 
 </div>
+        <div id="works" class="portfolio">
+    <!-- <img class="portfolio__wave" src="img/bg-wave.svg" alt=""> -->
+
+    <div class="container">
+        <!-- <div class="title">My Works</div> -->
+        <div class="tabs_content">
+            <div class="tabs">
+                <input type="radio" id="radio-1" name="tabs" checked />
+                <label class="tab" for="radio-1">All<span class="notification">2</span></label>
+                <input type="radio" id="radio-2" name="tabs" />
+                <label class="tab" for="radio-2">Web-sites</label>
+                <input type="radio" id="radio-3" name="tabs" />
+                <label class="tab" for="radio-3">Components</label>
+                <input type="radio" id="radio-4" name="tabs" />
+                <label class="tab" for="radio-4">Designs</label>
+                <!-- <span class="glider"></span> -->
+            </div>
+        </div>
+        <div class="portfolio__works_list">
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+            <div class="portfolio__works_item">
+                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <!-- <img class="portfolio__wave rotate" src="img/bg-wave.svg" alt=""> -->
+
+</div>
         <div id="about" class="about">
+    <img class="portfolio__wave" src="img/bg-wave.svg" alt="">
+
     <div class="container">
         <div class="about__title title">About me</div>
         <div class="about__content">
             <div class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo consequatur magnam consequuntur non. Natus distinctio esse amet ipsam ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo consequatur magnam consequuntur non. Natus distinctio esse amet ipsam ullam.</div>
             <div class="about__languages">
-                <div class="about__languages_title">Languages</div>
+                <div class="title light fz-20">Languages</div>
                 <ul class="about__languages_list">
                     <li class="about__languages_item">
                         <div class="about__languages_name">Ukrainian</div>
@@ -176,7 +279,7 @@
             </div>
         </div>
         <div class="about__skills">
-            <div class="about__skills_title">Skills</div>
+            <div class="title light fz-20">Skills</div>
             <div class="about__skills_content">
                 <ul class="about__skills_content_block">
                     <div class="about__skills_content_img">
@@ -247,50 +350,65 @@
             </div>
         </div>
     </div>
-</div>
-        <div class="portfolio">
-    <img class="portfolio__wave" src="img/bg-wave.svg" alt="">
-
-    <!-- <div class="container">
-        <div class="title light">My Works</div>
-        <div class="tabs_content">
-            <div class="tabs">
-                <input type="radio" id="radio-1" name="tabs" checked />
-                <label class="tab" for="radio-1">Upcoming<span class="notification">2</span></label>
-                <input type="radio" id="radio-2" name="tabs" />
-                <label class="tab" for="radio-2">Development</label>
-                <input type="radio" id="radio-3" name="tabs" />
-                <label class="tab" for="radio-3">Completed</label>
-                <span class="glider"></span>
-            </div>
-        </div>
-        <div class="portfolio__works_list">
-            <div class="portfolio__works_item">
-                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
-            </div>
-            <div class="portfolio__works_item">
-                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
-            </div>
-            <div class="portfolio__works_item">
-                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
-            </div>
-            <div class="portfolio__works_item">
-                <picture><source srcset="img/portfolio/uber.webp" type="image/webp"><img class="portfolio__works_img" src="img/portfolio/uber.jpg" alt="uber"></picture>
-            </div>
-
-
-
-        </div>
-
-
-    </div> -->
     <img class="portfolio__wave rotate" src="img/bg-wave.svg" alt="">
 
 </div>
+        <div id="contact" class="contact">
+    <div class="container">
+        <div class="contact__wrapper">
+
+            <div class="contact__descr">
+                <div class="title">Contact me</div>
+
+                <form action="#" class="contact__form">
+                    <div class="contact__input">
+                        <!-- <label for="name">Name</label> -->
+                        <input required placeholder="Name" name="name" id="name" type="text">
+                    </div>
+                    <div class="contact__input">
+                        <!-- <label for="email">E-mail</label> -->
+                        <input required placeholder="E-mail" name="email" id="email" type="email">
+                    </div>
+                    <div class="contact__textarea">
+                        <!-- <label for="text">Message</label> -->
+                        <textarea required placeholder="Text &#9998;" name="text" id="text"></textarea>
+                    </div>
+                    <div class="contact__privacy">
+                        <input required type="checkbox">
+                        <div class="contact__privacy__text">
+                            I agree to the <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <button class="button button_contact">Submit</button>
+                </form>
+
+
+            </div>
+            <div class="contact__end">
+
+                <div class="contact__img">
+                    <picture><source srcset="img/boyGood.webp" type="image/webp"><img src="img/boyGood.png" alt=""></picture>
+                </div>
+                <div class="contact__social">
+                    <a href="#" class="contact__social_item">
+                        <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
+                    </a>
+                    <a href="#" class="contact__social_item">
+                        <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
+                    </a>
+                    <a href="#" class="contact__social_item">
+                        <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     </main>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20220619184843"></script>
-    <script src="js/app.min.js?_v=20220619184843"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20220624093625"></script>
+    <script src="js/app.min.js?_v=20220624093625"></script>
 </body>
 </html>
