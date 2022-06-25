@@ -1245,7 +1245,7 @@ input[id=radio-3]:checked ~ .tab {
   font-weight: 500;
   background-color: transparent;
   border: 4px solid var(--main_color);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .contact__input__input input {
@@ -1264,7 +1264,7 @@ input[id=radio-3]:checked ~ .tab {
   height: 200px;
   font-size: 16px;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 4px solid var(--main_color);
   padding: 10px;
   opacity: 0.7;
@@ -1334,7 +1334,9 @@ input[id=radio-3]:checked ~ .tab {
 }
 
 .contact__privacy input {
-  margin-right: 5px;
+  margin-right: 7px;
+  width: 15px;
+  height: 15px;
 }
 
 .contact__bg {
@@ -1382,6 +1384,11 @@ input[id=radio-3]:checked ~ .tab {
 .contact__bg__internet .internet {
   -webkit-animation: 6s linear 1s infinite internet;
           animation: 6s linear 1s infinite internet;
+  width: 100px;
+}
+
+.contact__bg__internet .internet_back {
+  width: 60px;
 }
 
 .contact__bg__message {
