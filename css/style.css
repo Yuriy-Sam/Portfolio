@@ -722,7 +722,7 @@ body {
 .portfolio {
   padding: 10px 0 10px 0;
   position: relative;
-  min-height: 600px;
+  min-height: 200px;
   margin: 0 auto;
 }
 
@@ -756,6 +756,15 @@ body {
 .portfolio__works_item {
   width: 100%;
   height: 100%;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  border-radius: 20px;
+}
+
+.portfolio__works_item:hover {
+  -webkit-box-shadow: 0 0 20px 0 var(--second_color);
+          box-shadow: 0 0 20px 0 var(--second_color);
 }
 
 .portfolio__works_item:nth-child(1) {
@@ -778,6 +787,7 @@ body {
 
 .portfolio__works_img {
   width: 100%;
+  border-radius: 20px;
   height: 100%;
 }
 
@@ -786,7 +796,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
-  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,10 +804,6 @@ body {
           justify-content: center;
   position: relative;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
-          box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
-  padding: 10px;
-  border-radius: 99px;
 }
 
 .tabs * {
@@ -808,6 +813,11 @@ body {
 .tabs_content {
   margin: 0 auto;
   max-width: 470px;
+  border: 10px #fff solid;
+  margin-bottom: 30px;
+  border-radius: 99px;
+  -webkit-box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+          box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
 }
 
 input[type=radio] {
@@ -889,7 +899,7 @@ input[id=radio-3]:checked ~ .glider {
   display: -ms-flexbox;
   display: flex;
   height: 40px;
-  width: 150px;
+  width: 33.3333333333%;
   background-color: var(--main_color);
   z-index: 1;
   border-radius: 99px;
@@ -1949,23 +1959,22 @@ input[id=radio-3]:checked ~ .glider {
 }
 
 @media (max-width: 575px) {
-  .tabs {
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+  .tabs_content {
+    margin: 0 auto;
+    max-width: 300px;
   }
 
   .glider {
     height: 40px;
-    width: 110px;
   }
 
   .tab {
-    font-size: 1.05rem;
+    font-weight: 600;
+    font-size: 0.9rem;
   }
 
   .portfolio__works_list {
-    grid: repeat(6, 1fr)/repeat(1, 1fr);
+    grid: repeat(4, 1fr)/repeat(1, 1fr);
     min-height: auto;
     max-height: auto;
   }
